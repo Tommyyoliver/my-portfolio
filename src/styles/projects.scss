@@ -1,0 +1,175 @@
+@use './variables.scss';
+
+
+.projects {
+    grid-column: 2 / 4;
+    grid-row: 5 / 6;
+    background-image: url(../assets/code.gif);
+    border-radius: variables.$border;
+    text-decoration: none;
+    color: #ffffff;
+    z-index: 200;
+    opacity: .9;
+    
+    > div {
+        background-color: variables.$background;
+        border-radius: variables.$border;
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            > .project-title {
+                margin: 10px;
+                height: 30px;
+                > p {
+                    font-weight: 900;
+                    font-size: 1.6rem;
+                }
+            }
+            > .project-description {
+                margin: 0 0 0 10px;
+                height: min-content;
+                > p {
+                    letter-spacing: 1px;
+                    font-size: .9rem;
+                    font-weight: 500;
+                }
+            }
+        }
+        > .project-img {
+            width: 10px;
+            height: 10px;
+            > img {
+                width: 15px;
+                height: 15px;
+                filter: invert(1);
+                transform: translate(-20px, 17px);
+            }
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .projects {
+        > div {
+            > div {
+                > .project-title {
+                    margin: 10px;
+                    height: 30px;
+                    > p {
+                        font-size: 2rem;
+                    }
+                }
+                > .project-description {
+                    margin: 10px 0 0 10px;
+                    > p {
+                        letter-spacing: 2px;
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 600px) {
+    .projects {
+        > div {
+            > div {
+                > .project-title {
+                    margin: 10px;
+                    height: 30px;
+                    > p {
+                        font-size: 2.2rem;
+                    }
+                }
+                > .project-description {
+                    margin: 10px 0 0 10px;
+                    > p {
+                        letter-spacing: 2px;
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+            > .project-img {
+                > img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media ( min-width: 700px) {
+    .projects {
+        grid-column: 3 / 5;
+        grid-row: 3 / 4;
+        transition: .3s;
+    }
+    .projects:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media (min-width: 930px) {
+    .projects {
+        > div {
+            > div {
+                > .project-title {
+                    margin: 20px;
+                    height: 30px;
+                    > p {
+                        font-size: 2.4rem;
+                    }
+                }
+                > .project-description {
+                    margin: 10px 0 0 20px;
+                    > p {
+                        letter-spacing: 3px;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+            > .project-img {
+                > img {
+                    width: 25px;
+                    height: 25px;
+                    transform: translate(-40px, 27px);
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1100px) {
+    .projects {
+        > div {
+            > div {
+                > .project-title {
+                    margin: 20px;
+                    height: 30px;
+                    > p {
+                        font-size: 2.8rem;
+                    }
+                }
+                > .project-description {
+                    margin: 30px 0 0 20px;
+                    > p {
+                        letter-spacing: 3px;
+                        font-size: 1.8rem;
+                        font-weight: 550;
+                    }
+                }
+            }
+        }
+    }
+}

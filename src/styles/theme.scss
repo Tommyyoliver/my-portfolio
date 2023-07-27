@@ -1,0 +1,148 @@
+@use './variables.scss';
+
+
+.theme {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    background-color: variables.$background;
+    border-radius: variables.$border;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+
+    > .switch {
+        width: 100px;
+        height: 100px;
+        .checkbox {
+            appearance: none;
+            width: 80px;
+            height: 40px;
+            background-color: variables.$black;
+            border-radius: 25px;
+            cursor: pointer;
+            transform: translate(10px, 10px);
+        }
+        .checkbox:before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: #2e2e2e;
+            border-radius: 50%;
+            transform: translate(5px, 5px);
+            transition: .3s ;
+        }
+        .checkbox:checked::before {
+            background-color: variables.$white;
+            transform: translate(45px, 5px);
+        }
+        .slider {
+            height: 1.8rem;
+            width: .3rem;
+            background-color: #2e2e2e;
+            position: absolute;
+            transform: translate(-55px, 50px);
+            cursor: pointer;
+        }
+        .slider:after {
+            position: absolute;
+            content: "";
+            height: 0;
+            width: .3rem;
+            border-bottom: .8rem solid #7c40cc56;
+            border-left: 0.5rem solid transparent;
+            border-right: 0.5rem solid transparent;
+            transform: translate(-8px, 30px);
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .theme {
+        > .switch {
+            width: 100px;
+            height: 100px;
+
+            > .checkbox {
+                width: 100px;
+                height: 50px;
+                transform: translate(5px, 0px);
+            }
+            > .checkbox:before {
+                width: 40px;
+                height: 40px;
+            }
+            .checkbox:checked::before {
+                transform: translate(55px, 5px);
+            }
+            .slider {
+                height: 1.8rem;
+                width: .3rem;
+                transform: translate(-70px, 50px);
+            }
+        }
+    }
+}
+
+@media ( min-width: 700px) {
+    .theme {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+    }
+}
+
+@media (min-width: 1024px) {
+    .theme {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+    
+        .switch {
+            width: 100px;
+            height: 100px;
+            .checkbox {
+                appearance: none;
+                width: 130px;
+                height: 50px;
+                background-color: variables.$black;
+                border-radius: 25px;
+                cursor: pointer;
+                transform: translate(-15px, 0px);
+            }
+            .checkbox:before {
+                content: "";
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                background-color: #2e2e2e;
+                border-radius: 50%;
+                transform: translate(5px, 5px);
+                transition: .3s ;
+            }
+            .checkbox:checked::before {
+                background-color: variables.$white;
+                transform: translate(85px, 5px);
+            }
+            .slider {
+                height: 2.3rem;
+                width: .3rem;
+                background-color: #2e2e2e;
+                position: absolute;
+                transform: translate(10px, -4px);
+                cursor: pointer;
+            }
+            .slider:after {
+                position: absolute;
+                content: "";
+                height: 0;
+                width: .3rem;
+                border-bottom: 1rem solid #7c40cc56;
+                border-left: 0.5rem solid transparent;
+                border-right: 0.5rem solid transparent;
+                transform: translate(-8px, 36px);
+            }
+        }
+    }
+}

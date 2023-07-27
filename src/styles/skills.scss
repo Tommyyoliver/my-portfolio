@@ -1,0 +1,119 @@
+@use './variables.scss';
+
+
+.skills {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+    background-color: #df6d10aa;
+    border-radius: variables.$border;
+    aspect-ratio: 1;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > div {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        justify-items: center;
+        align-items: center;
+        margin-left: 7px;
+        max-width: 230px;
+
+        .skills-html {
+            grid-column: 1,2;
+            grid-row: 1,2;
+            width: 100%;
+            height: 100%;
+            img {
+                filter: invert(1);
+                width: 80%;
+                height: 80%;
+            }
+        }
+        .skills-css {
+            grid-column: 2,3;
+            grid-row: 1,2;
+            width: 100%;
+            height: 100%;
+            img {
+                filter: invert(1);
+                width: 80%;
+                height: 80%;
+            }
+        }
+        .skills-javascript {
+            grid-column: 3,4;
+            grid-row: 1,2;
+            width: 100%;
+            height: 100%;
+            img {
+                filter: invert(1);
+                width: 80%;
+                height: 80%;
+            }
+        }
+        .skills-react {
+            grid-column: 1,2;
+            grid-row: 2,3;
+            width: 100%;
+            height: 100%;
+            img {
+                filter: invert(1);
+                width: 80%;
+                height: 80%;
+            }
+        }
+        .skills-typescript {
+            grid-column: 2,3;
+            grid-row: 2,3;
+            width: 100%;
+            height: 100%;
+            img {
+                filter: invert(1);
+                width: 80%;
+                height: 80%;
+            }
+        }
+        .skills-sass {
+            grid-column: 3,4;
+            grid-row: 2,3;
+            width: 100%;
+            height: 100%;
+            img {
+                filter: invert(1);
+                width: 80%;
+                height: 80%;
+            }
+        }
+        .skills-webpack {
+            grid-column: 1,2;
+            grid-row: 3,4;
+            width: 100%;
+            height: 100%;
+            img {
+                filter: invert(1);
+                width: 80%;
+                height: 80%;
+            }
+        }
+        .skills-git {
+            grid-column: 2,3;
+            grid-row: 3,4;
+            width: 100%;
+            height: 100%;
+            img {
+                filter: invert(1);
+                width: 80%;
+                height: 80%;
+            }
+        }        
+    }
+}
+
+@media ( min-width: 700px) {
+    .skills {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        margin: 0 auto;
+    }
+}

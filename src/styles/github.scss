@@ -1,0 +1,159 @@
+@use './variables.scss';
+
+
+.github {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    background-color: variables.$white;
+    border-radius: variables.$border;
+    aspect-ratio: 1;
+    z-index: 200;
+
+    > div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        > div {
+            width: 100%;
+            height: 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            > img {
+                width: 15px;
+                height: 15px;
+                transform: translate(-9px, 7px);
+            }
+        }
+        > img {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (min-width: 380px) {
+    .github {
+        > div {
+            > div {
+                > img {
+                    transform: translate(-8px, -2px);
+                }
+            }
+        }
+    }
+}
+@media (min-width: 500px) {
+    .github {
+        > div {
+            > div {
+                > img {
+                    transform: translate(-7px, -20px);
+                }
+            }
+        }
+    }
+}
+@media (min-width: 600px) {
+    .github {
+        > div {
+            > div {
+                > img {
+                    transform: translate(-7px, -12px);
+                }
+            }
+            > img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+}
+
+@media ( min-width: 700px) {
+    .github {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+
+        > div {
+
+            > div {
+                > img {
+                    width: 20px;
+                    height: 20px;
+                    transform: translate(-6px, 6px);
+                }
+            }
+        }
+        transition: .3s;
+    }
+    .github:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media (min-width: 800px) {
+    .github {
+        > div {
+
+            > div {
+                > img {
+                    width: 20px;
+                    height: 20px;
+                    transform: translate(-6px, -6px);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 930px) {
+    .github {
+        > div {
+
+            > div {
+                > img {
+                    width: 25px;
+                    height: 25px;
+                    transform: translate(-6px, -11px);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .github {
+        > div {
+
+            > div {
+                > img {
+                    transform: translate(-6px, -9px);
+                }
+            }
+            > img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1100px) {
+    .github {
+        > div {
+
+            > div {
+                > img {
+                    transform: translate(-5px, -28px);
+                }
+            }
+        }
+    }
+}
+

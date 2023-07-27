@@ -1,0 +1,28 @@
+$border: 20px;
+$background: #7042acaa;
+$white: #fefefe;
+$black: #0e0e0e;
+
+%title {
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+%description {
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+%redirect {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    margin-right: 20px;
+}
+%scale {
+    transform: scale(1.05);
+}
+%skills {
+    filter: invert(1);
+    width: 50px;
+    height: 50px;
+}

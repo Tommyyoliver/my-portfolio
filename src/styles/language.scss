@@ -1,0 +1,76 @@
+@use './variables.scss';
+
+
+.language {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background-color: variables.$background;
+    border-radius: variables.$border;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 200;
+
+    > p {
+        font-size: 3rem;
+        font-weight: 800;
+    }
+
+    > .language-description {
+        display: flex;
+        > p {
+            font-size: 1rem;
+            margin: 0 5px;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .language {
+        > p {
+            font-size: 4rem;
+        }
+        > .language-description {
+            > p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media ( min-width: 700px) {
+    .language {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+        transition: .3s;
+    }
+    .language:hover {
+        transform: scale(1.05);
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .language {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+    
+        p {
+            font-size: 5.5rem;
+        }
+        .language-description {
+            display: flex;
+            p {
+                
+            }
+        }
+    }
+}
