@@ -50,10 +50,14 @@ const MyProvider = ({ children }) => {
                     description: "Generador de contraseñas aleatorias personalizables",
                 },
                 project2: {
+                    title: "Calculadora",
+                    description: "Calculadora funcional moderna"
+                },
+                project3: {
                     title: "Página de Compras",
                     description: "Plantilla de páginas de compras"
                 },
-                project3: {
+                project4: {
                     title: "Rick and Morty API",
                     description: "Uso de API"
                 }
