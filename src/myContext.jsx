@@ -21,10 +21,14 @@ const MyProvider = ({ children }) => {
                     description: "Customizable random password generator",
                 },
                 project2: {
+                    title: "Calculator",
+                    description: "Modern functional calculator"
+                },
+                project3: {
                     title: "Shopping Page",
                     description: "Shopping page template"
                 },
-                project3: {
+                project4: {
                     title: "Rick and Morty API",
                     description: "Use of API"
                 }
