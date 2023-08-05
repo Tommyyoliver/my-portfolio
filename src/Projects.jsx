@@ -4,6 +4,7 @@ import password from './assets/page-password.png'
 import calculator from './assets/calculator.png';
 import shop from './assets/page-shop.png'
 import api from './assets/page-api.png'
+import tasklist from './assets/tasklist.png'
 import close from './assets/close.png';
 import { Link } from 'react-router-dom';
 import { useContext, useState } from 'react';
@@ -69,6 +70,17 @@ function Projects() {
                     github: "https://github.com/tommyyoliver/rick-and-morty-api/",
                 }
             });
+        } else if (id == 5) {
+            setShowPortal({
+                show: !showPortal.show,
+                text: {
+                    title: text.projectpage.project5.title,
+                    description: text.projectpage.project5.description,
+                    tag: ["React"],
+                    website: "https://tommyyoliver-tasklist.netlify.app/",
+                    github: "https://github.com/tommyyoliver/tasklist/",
+                }
+            });
         }
     }
 
@@ -111,6 +123,7 @@ function Projects() {
                     </div>
                 </div>
                 <div className="projectpage-section">
+
                     <div onClick={() => handleShowPortal(1)} className="projectpage-section-1">
                         <div className='projectpage-section-1-img'>
                             <img src={password} alt='password' />
@@ -158,6 +171,18 @@ function Projects() {
                         <div className='projectpage-text'>
                             <p className='projectpage-text-title'>{text.projectpage.project4.title}</p>
                             <p className='projectpage-text-description'>{text.projectpage.project4.description}</p>
+                            <div className='projectpage-tag'>
+                                <p>React</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div onClick={() => handleShowPortal(5)} className="projectpage-section-5">
+                        <div className='projectpage-section-5-img'>
+                            <img src={tasklist} alt='password' />
+                        </div>
+                        <div className='projectpage-text'>
+                            <p className='projectpage-text-title'>{text.projectpage.project5.title}</p>
+                            <p className='projectpage-text-description'>{text.projectpage.project5.description}</p>
                             <div className='projectpage-tag'>
                                 <p>React</p>
                             </div>

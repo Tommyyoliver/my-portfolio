@@ -16,6 +16,10 @@ const MyProvider = ({ children }) => {
             courses: "Certificate Courses Learned",
             projectpage: {
                 title: "PROJECTS",
+                project5: {
+                    title: 'TaskList',
+                    description: 'Functional TaskList with data persistence'
+                },
                 project1: {
                     title: "Password Generador",
                     description: "Customizable random password generator",
@@ -45,6 +49,10 @@ const MyProvider = ({ children }) => {
             courses: "Certificado cursos aprendidos",
             projectpage: {
                 title: "PROYECTOS",
+                project5: {
+                    title: 'Lista de Tareas',
+                    description: 'Lista de tareas funcional con persistencia de datos'
+                },
                 project1: {
                     title: "Generador de Contraseñas",
                     description: "Generador de contraseñas aleatorias personalizables",
