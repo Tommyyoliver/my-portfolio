@@ -1,25 +1,25 @@
-import { useContext } from "react";
-import { Link } from 'react-router-dom';
-import './Home.scss';
-import arrow from './assets/right-arrow.png';
-import redirect from './assets/maximize.png';
-import github from './assets/github.png';
-import html from './assets/html.png';
-import css from './assets/css.png';
-import javascript from './assets/js.png';
-import react from './assets/react.png';
-import typescript from './assets/typescript.png';
-import sass from './assets/sass.png';
-import webpack from './assets/webpack.png';
-import git from './assets/git.png';
-import courses from './assets/courses.png';
-import mail from './assets/mail.png';
+import { useContext } from "react"
+import { Link } from 'react-router-dom'
+import './Home.scss'
+import arrow from './assets/right-arrow.png'
+import redirect from './assets/maximize.png'
+import github from './assets/github.png'
+import html from './assets/html.png'
+import css from './assets/css.png'
+import javascript from './assets/js.png'
+import react from './assets/react.png'
+import typescript from './assets/typescript.png'
+import sass from './assets/sass.png'
+import git from './assets/git.png'
+import redux from './assets/redux.png'
+import courses from './assets/courses.png'
+import mail from './assets/mail.png'
 import me from './assets/me-portfolio.png'
-import { MyContext } from "./myContext";
+import { MyContext } from "./myContext"
 
 function Home() {
 
-    const { theme, text, handleLanguage, handleTheme } = useContext(MyContext);
+    const { theme, text, handleLanguage, handleTheme } = useContext(MyContext)
 
     return (
         <div className={theme}>
@@ -96,14 +96,14 @@ function Home() {
                         <div className='skills-react'>
                             <img src={react} alt="" />
                         </div>
+                        <div className='skills-redux'>
+                            <img src={redux} alt="" />
+                        </div>
                         <div className='skills-typescript'>
                             <img src={typescript} alt="" />
                         </div>
                         <div className='skills-sass'>
                             <img src={sass} alt="" />
-                        </div>
-                        <div className='skills-webpack'>
-                            <img src={webpack} alt="" />
                         </div>
                         <div className='skills-git'>
                             <img src={git} alt="" />
