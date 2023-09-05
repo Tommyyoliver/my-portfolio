@@ -1,4 +1,4 @@
-@use './styles/variables.scss';
+@use '../../home/styles/variables.scss';
 
 
 ::-webkit-scrollbar {
@@ -97,7 +97,7 @@
     height: 100%;
     z-index: 100;
     opacity: 0.060;
-    background-image: url(./assets/rpdc.gif);
+    background-image: url(../../../assets/rpdc.gif);
 }
 
 

@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import { Home } from './Home';
-import { Projects } from './Projects';
+import { Home } from './components/home/Home';
+import { Projects } from './components/projects/Projects';
 import { MyProvider } from './myContext';
 
 function App() {

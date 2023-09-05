@@ -1,4 +1,4 @@
-@use './styles/variables.scss';
+@use './variables.scss';
 
 
 * {
@@ -26,13 +26,13 @@ a {
 }
 
 .noise-gif {
+    background-image: url(../../../assets/rpdc.gif);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     opacity: 0.060;
-    background-image: url(./assets/rpdc.gif);
 }
 
 ::-webkit-scrollbar {
@@ -265,11 +265,11 @@ a {
 }
 
 
-@import url(./styles/language.scss);
-@import url(./styles/theme.scss);
-@import url(./styles/github.scss);
-@import url(./styles/linkedin.scss);
-@import url(./styles/projects.scss);
-@import url(./styles/skills.scss);
-@import url(./styles/courses.scss);
-@import url(./styles/mail.scss);
+@import url(./language.scss);
+@import url(./theme.scss);
+@import url(./github.scss);
+@import url(./linkedin.scss);
+@import url(./projects.scss);
+@import url(./skills.scss);
+@import url(./courses.scss);
+@import url(./mail.scss);
