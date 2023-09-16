@@ -3,7 +3,7 @@ import arrow from '../../assets/right-arrow.png';
 import password from '../../assets/page-password.png'
 import calculator from '../../assets/calculator.png';
 import shop from '../../assets/page-shop.png'
-import api from '../../assets/page-api.png'
+// import api from '../../assets/page-api.png'
 import tasklist from '../../assets/tasklist.png'
 import close from '../../assets/close.png';
 import { Link } from 'react-router-dom';
@@ -25,7 +25,7 @@ function Projects() {
     const [showPortal, setShowPortal] = useState(initialStatePortal);
 
     const handleShowPortal = (id) => {
-        
+
         if (id == 1) {
             setShowPortal({
                 show: !showPortal.show,
@@ -48,7 +48,7 @@ function Projects() {
                     github: "https://github.com/tommyyoliver/calculator/",
                 }
             });
-        } else if (id == 3){
+        } else if (id == 3) {
             setShowPortal({
                 show: !showPortal.show,
                 text: {
@@ -87,10 +87,10 @@ function Projects() {
     return (
         <div className={theme}>
             <div className='noise-gif'></div>
-            { showPortal.show && (
+            {showPortal.show && (
                 <div className='project-portal'>
                     <div className='project-portal-close'>
-                        <img onClick={() => {handleShowPortal(1)}} src={close} alt='close' />
+                        <img onClick={() => { handleShowPortal(1) }} src={close} alt='close' />
                     </div>
                     <div className='project-portal-header'>
                         <h3>{showPortal.text.title}</h3>
@@ -153,7 +153,7 @@ function Projects() {
 
                     <div onClick={() => handleShowPortal(3)} className="projectpage-section-3">
                         <div className='projectpage-section-3-img'>
-                                <img src={shop} alt='shop' />
+                            <img src={shop} alt='shop' />
                         </div>
                         <div className='projectpage-text'>
                             <p className='projectpage-text-title'>{text.projectpage.project3.title}</p>
@@ -164,18 +164,18 @@ function Projects() {
                             </div>
                         </div>
                     </div>
-                    <div onClick={() => handleShowPortal(4)} className="projectpage-section-4">
-                        <div className='projectpage-section-4-img'>
-                            <img src={api} alt='api' />
-                        </div>
-                        <div className='projectpage-text'>
-                            <p className='projectpage-text-title'>{text.projectpage.project4.title}</p>
-                            <p className='projectpage-text-description'>{text.projectpage.project4.description}</p>
-                            <div className='projectpage-tag'>
-                                <p>React</p>
-                            </div>
-                        </div>
-                    </div>
+                    {/* <div onClick={() => handleShowPortal(4)} className="projectpage-section-4"> */}
+                    {/*     <div className='projectpage-section-4-img'> */}
+                    {/*         <img src={api} alt='api' /> */}
+                    {/*     </div> */}
+                    {/*     <div className='projectpage-text'> */}
+                    {/*         <p className='projectpage-text-title'>{text.projectpage.project4.title}</p> */}
+                    {/*         <p className='projectpage-text-description'>{text.projectpage.project4.description}</p> */}
+                    {/*         <div className='projectpage-tag'> */}
+                    {/*             <p>React</p> */}
+                    {/*         </div> */}
+                    {/*     </div> */}
+                    {/* </div> */}
                     <div onClick={() => handleShowPortal(5)} className="projectpage-section-5">
                         <div className='projectpage-section-5-img'>
                             <img src={tasklist} alt='password' />

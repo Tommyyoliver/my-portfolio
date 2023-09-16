@@ -151,7 +151,7 @@
     justify-content: center;
 
 
-    > .projectpage-section-1, .projectpage-section-2, .projectpage-section-3, .projectpage-section-4, .projectpage-section-5 {
+    > .projectpage-section-1, .projectpage-section-2, .projectpage-section-3, .projectpage-section-5 {
         box-shadow: 0px 0px 5px 0px #ffffff;
         border-radius: variables.$border;
         background-color: #010101dd;
@@ -233,18 +233,6 @@
         grid-column: 1 / 2;
         grid-row: 4 / 5;
         > .projectpage-section-3-img {
-            position: absolute;
-            opacity: .1;
-            > img {
-                width: 300px;
-                height: 300px;
-            }
-        }
-    }
-    > .projectpage-section-4 {
-        grid-column: 1 / 2;
-        grid-row: 5 / 6;
-        > .projectpage-section-4-img {
             position: absolute;
             opacity: .1;
             > img {
@@ -339,7 +327,7 @@
         gap: 1.5rem;
     
     
-        > .projectpage-section-1, .projectpage-section-2, .projectpage-section-3, .projectpage-section-4, .projectpage-section-5 {
+        > .projectpage-section-1, .projectpage-section-2, .projectpage-section-3, .projectpage-section-5 {
             cursor: pointer;
             transition: .3s;
             > .projectpage-text {
@@ -360,7 +348,7 @@
                 }
             }
         }
-        > .projectpage-section-1:hover, .projectpage-section-2:hover, .projectpage-section-3:hover, .projectpage-section-4:hover, .projectpage-section-5:hover {
+        > .projectpage-section-1:hover, .projectpage-section-2:hover, .projectpage-section-3:hover, .projectpage-section-5:hover {
             transform: scale(1.05);
         }
     
@@ -380,10 +368,6 @@
             grid-column: 2 / 3;
             grid-row: 2 / 3;
         }
-        > .projectpage-section-4 {
-            grid-column: 1 / 2;
-            grid-row: 3 / 4;
-        }
     }
 }
 
@@ -399,7 +383,6 @@
     .projectpage-header {
         max-width: 1100px;
         height: 120px;
-        // margin: 0 auto 50px auto;
     }
     
     .projectpage-section {
@@ -421,10 +404,6 @@
         }
         > .projectpage-section-3 {
             grid-column: 1 / 2;
-            grid-row: 2 / 3;
-        }
-        > .projectpage-section-4 {
-            grid-column: 2 / 3;
             grid-row: 2 / 3;
         }
     }

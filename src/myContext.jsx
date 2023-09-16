@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 const MyContext = createContext();
 
 const MyProvider = ({ children }) => {
-    
+
     const translations = {
         en: {
             title: "👋 Hi, I'm Tommy",
@@ -65,10 +65,10 @@ const MyProvider = ({ children }) => {
                     title: "Página de Compras",
                     description: "Plantilla de páginas de compras"
                 },
-                project4: {
-                    title: "Rick and Morty API",
-                    description: "Uso de API"
-                }
+                // project4: {
+                //     title: "Rick and Morty API",
+                //     description: "Uso de API"
+                // }
             }
         }
     }
