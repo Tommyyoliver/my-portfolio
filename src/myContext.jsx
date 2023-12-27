@@ -16,6 +16,10 @@ const MyProvider = ({ children }) => {
             courses: "Certificate Courses Learned",
             projectpage: {
                 title: "PROJECTS",
+                project6: {
+                    title: 'Angular E-commerce',
+                    description:'E-commerce template project',
+                },
                 project5: {
                     title: 'TaskList',
                     description: 'Functional TaskList with data persistence'
@@ -49,6 +53,10 @@ const MyProvider = ({ children }) => {
             courses: "Certificado cursos aprendidos",
             projectpage: {
                 title: "PROYECTOS",
+                project6: {
+                    title: 'Angular E-commerce',
+                    description:'Proyecto de plantilla de comercio electrónico',
+                },
                 project5: {
                     title: 'Lista de Tareas',
                     description: 'Lista de tareas funcional con persistencia de datos'

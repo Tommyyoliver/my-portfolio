@@ -5,6 +5,7 @@ import calculator from '../../assets/calculator.png';
 import shop from '../../assets/page-shop.png'
 // import api from '../../assets/page-api.png'
 import tasklist from '../../assets/tasklist.png'
+import angularEcommerce from "../../assets/angular-ecommerce.png"
 import close from '../../assets/close.png';
 import { Link } from 'react-router-dom';
 import { useContext, useState } from 'react';
@@ -81,6 +82,17 @@ function Projects() {
                     github: "https://github.com/tommyyoliver/tasklist/",
                 }
             });
+        } else if (id == 6) {
+            setShowPortal({
+                show: !showPortal.show,
+                text: {
+                    title: text.projectpage.project6.title,
+                    description: text.projectpage.project6.description,
+                    tag: ["Angular"],
+                    website: "https://tommyyoliver-angular-ecommerce.netlify.app/",
+                    github: "https://github.com/tommyyoliver/angular-ecommerce/",
+                }
+            });
         }
     }
 
@@ -123,6 +135,32 @@ function Projects() {
                     </div>
                 </div>
                 <div className="projectpage-section">
+
+                    <div onClick={() => handleShowPortal(6)} className="projectpage-section-6">
+                        <div className='projectpage-section-6-img'>
+                            <img src={angularEcommerce} alt='angular-ecommerce' />
+                        </div>
+                        <div className='projectpage-text'>
+                            <p className='projectpage-text-title'>{text.projectpage.project6.title}</p>
+                            <p className='projectpage-text-description'>{text.projectpage.project6.description}</p>
+                            <div className='projectpage-tag'>
+                                <p>Angular</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div onClick={() => handleShowPortal(5)} className="projectpage-section-5">
+                        <div className='projectpage-section-5-img'>
+                            <img src={tasklist} alt='password' />
+                        </div>
+                        <div className='projectpage-text'>
+                            <p className='projectpage-text-title'>{text.projectpage.project5.title}</p>
+                            <p className='projectpage-text-description'>{text.projectpage.project5.description}</p>
+                            <div className='projectpage-tag'>
+                                <p>React</p>
+                            </div>
+                        </div>
+                    </div>
 
                     <div onClick={() => handleShowPortal(1)} className="projectpage-section-1">
                         <div className='projectpage-section-1-img'>
@@ -176,18 +214,7 @@ function Projects() {
                     {/*         </div> */}
                     {/*     </div> */}
                     {/* </div> */}
-                    <div onClick={() => handleShowPortal(5)} className="projectpage-section-5">
-                        <div className='projectpage-section-5-img'>
-                            <img src={tasklist} alt='password' />
-                        </div>
-                        <div className='projectpage-text'>
-                            <p className='projectpage-text-title'>{text.projectpage.project5.title}</p>
-                            <p className='projectpage-text-description'>{text.projectpage.project5.description}</p>
-                            <div className='projectpage-tag'>
-                                <p>React</p>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
