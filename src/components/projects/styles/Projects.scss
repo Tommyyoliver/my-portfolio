@@ -31,6 +31,7 @@
     background-color: #1d1d1d;
     z-index: 500;
     border-radius: variables.$border;
+    border: 3px solid #2d2d2d;
 
     > .project-portal-close {
         position: absolute;
@@ -50,6 +51,7 @@
         
         > h3 {
             font-size: 2rem;
+            border-bottom: 1px solid #2d2d2d;
         }
         > p {
             margin-top: 20px;
@@ -59,6 +61,8 @@
         > .project-portal-header-tag {
             display: flex;
             margin-top: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #2d2d2d;
 
             > p {
                 font-size: .9rem;
@@ -73,7 +77,7 @@
     }
     .project-portal-link {
         width: 90%;
-        margin: 40px auto 0 auto;
+        margin: 20px auto 0 auto;
 
         > div {
             margin-bottom: 15px;
@@ -157,7 +161,8 @@
         box-shadow: 0px 0px 5px 0px #ffffff;
         border-radius: variables.$border;
         background-color: #010101dd;
-        > .projectpage-text {
+        cursor: pointer;
+            > .projectpage-text {
             width: 300px;
             height: 300px;
 
@@ -327,12 +332,11 @@
     }
     
     .projectpage-section {
-        display: flex;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-wrap: wrap;
     
     
         > .projectpage-section-1, .projectpage-section-2, .projectpage-section-3, .projectpage-section-5, .projectpage-section-6 {
-            cursor: pointer;
             transition: .3s;
             > .projectpage-text {
 
@@ -359,13 +363,13 @@
 }
 
 @media (min-width: 1024px) {
-    .projectpage-contain {
-        width: 100vw;
-        min-height: 100vh;
-        height: 100%;
-        z-index: 200;
-        margin: 30px;
-    }
+    // .projectpage-contain {
+    //     width: 100vw;
+    //     min-height: 100vh;
+    //     height: 100%;
+    //     z-index: 200;
+    //     margin: 30px;
+    // }
     
     .projectpage-header {
         max-width: 1100px;

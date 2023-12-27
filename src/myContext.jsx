@@ -24,22 +24,22 @@ const MyProvider = ({ children }) => {
                     title: 'TaskList',
                     description: 'Functional TaskList with data persistence'
                 },
-                project1: {
-                    title: "Password Generador",
-                    description: "Customizable random password generator",
+                // project4: {
+                //     title: "Rick and Morty API",
+                //     description: "Use of API"
+                // },
+                project3: {
+                    title: "Shopping Page",
+                    description: "Shopping page template"
                 },
                 project2: {
                     title: "Calculator",
                     description: "Modern functional calculator"
                 },
-                project3: {
-                    title: "Shopping Page",
-                    description: "Shopping page template"
+                project1: {
+                    title: "Password Generador",
+                    description: "Customizable random password generator",
                 },
-                project4: {
-                    title: "Rick and Morty API",
-                    description: "Use of API"
-                }
             }
         },
         es: {
@@ -61,28 +61,29 @@ const MyProvider = ({ children }) => {
                     title: 'Lista de Tareas',
                     description: 'Lista de tareas funcional con persistencia de datos'
                 },
-                project1: {
-                    title: "Generador de Contraseñas",
-                    description: "Generador de contraseñas aleatorias personalizables",
+                // project4: {
+                //     title: "Rick and Morty API",
+                //     description: "Uso de API"
+                // },
+                project3: {
+                    title: "Página de Compras",
+                    description: "Plantilla de páginas de compras"
                 },
                 project2: {
                     title: "Calculadora",
                     description: "Calculadora funcional moderna"
                 },
-                project3: {
-                    title: "Página de Compras",
-                    description: "Plantilla de páginas de compras"
+                project1: {
+                    title: "Generador de Contraseñas",
+                    description: "Generador de contraseñas aleatorias personalizables",
                 },
-                // project4: {
-                //     title: "Rick and Morty API",
-                //     description: "Uso de API"
-                // }
             }
         }
     }
 
     const initialTheme = 'body dark';
     const initialLanguage = 'en';
+    
     const [theme, setTheme] = useState(initialTheme);
     const [language, setLanguage] = useState(initialLanguage);
     const [text, setText] = useState(translations[language]);

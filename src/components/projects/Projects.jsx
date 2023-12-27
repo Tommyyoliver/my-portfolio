@@ -26,7 +26,6 @@ function Projects() {
     const [showPortal, setShowPortal] = useState(initialStatePortal);
 
     const handleShowPortal = (id) => {
-
         if (id == 1) {
             setShowPortal({
                 show: !showPortal.show,
@@ -98,7 +97,10 @@ function Projects() {
 
     return (
         <div className={theme}>
+            {/* background gif */}
             <div className='noise-gif'></div>
+
+            {/* modal project */}
             {showPortal.show && (
                 <div className='project-portal'>
                     <div className='project-portal-close'>
@@ -125,6 +127,8 @@ function Projects() {
                     </div>
                 </div>
             )}
+
+            {/* project page */}
             <div className="projectpage-contain">
                 <div className="projectpage-header">
                     <div>
@@ -134,6 +138,8 @@ function Projects() {
                         <div className='projectpage-header-title'>{text.projectpage.title}</div>
                     </div>
                 </div>
+
+                {/* projects cards */}
                 <div className="projectpage-section">
 
                     <div onClick={() => handleShowPortal(6)} className="projectpage-section-6">

@@ -12,6 +12,7 @@ import typescript from '../../assets/typescript.png'
 import sass from '../../assets/sass.png'
 import git from '../../assets/git.png'
 import redux from '../../assets/redux.png'
+import angular from '../../assets/angular.svg'
 import courses from '../../assets/courses.png'
 import mail from '../../assets/mail.png'
 import me from '../../assets/me-portfolio.png'
@@ -84,6 +85,9 @@ function Home() {
                 </Link>
                 <div className='skills'>
                     <div>
+                        <div className='skills-angular'>
+                            <img src={angular} alt="" />
+                        </div>
                         <div className='skills-html'>
                             <img src={html} alt="" />
                         </div>
