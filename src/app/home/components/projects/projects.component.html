@@ -1,0 +1,33 @@
+<section>
+  <div class="title-container">
+    <h2>{{ language.title }}</h2>
+    <p>{{ language.description }}</p>
+  </div>
+  <div class="projects-container">
+    @for(project of language.projects; track project.name) {
+    <div class="project">
+      <div class="project-redirect">
+        <div class="project-redirect-title">
+          <img src="../../../../assets/work.svg" alt="icon work">
+          <h4>{{ project.work }}</h4>
+        </div>
+        <a href="{{ project.web }}" target="_blank">
+          <img src="../../../../assets/redirect.svg" alt="icon redirect">
+        </a>
+      </div>
+      <div class="project-content">
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.description }}</p>
+        @for(tech of project.technologies; track tech) {
+        <div class="project-content-techlogies">
+          <p>{{ tech }}</p>
+        </div>
+        }
+      </div>
+      <div class="project-content-img">
+        <img src="{{ project.img }}" alt="img project web">
+      </div>
+    </div>
+    }
+  </div>
+</section>

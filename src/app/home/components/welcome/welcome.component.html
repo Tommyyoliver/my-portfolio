@@ -1,0 +1,59 @@
+<div class="background-header-top"></div>
+<header>
+  <div class="background-header-blur"></div>
+  <nav>
+    <ul>
+      <li class="title-name">TO</li>
+      <li class="functions-container">
+        <div class="language-container">
+          <img (click)="handleTheme()" src="../../../../assets/language.svg" alt="icon language">
+        </div>
+        <a download="CV-Oliver" href="../../../../assets/CV_Oliver.pdf">
+          <div class="cv-container">
+            <img src="../../../../assets/cloud.svg" alt="icon cv">
+            <p>CV</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <div class="card-container">
+    <div class="card-title">
+      <h1>Tommy Oliver</h1>
+      <p>{{ language.subtitle }}</p>
+      <div class="card-title-links">
+        <a href="https://github.com/Tommyyoliver" target="_blank">
+          <div>
+            <img src="../../../../assets/github.svg" alt="link img linkedin">
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/tommyyoliver/" target="_blank">
+          <div>
+            <img src="../../../../assets/linkedin.svg" alt="link img linkedin">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="card-description">
+      <div class="card-description-about">
+        <h2>{{ language.about.title }}</h2>
+        <p>{{ language.about.description }}</p>
+        <p>{{ language.about.description2 }}</p>
+      </div>
+      <div class="card-description-details">
+        <div class="card-description-details-experience">
+          <h2>+3</h2>
+          <p>{{ language.experience }}</p>
+        </div>
+        <div class="card-description-details-location">
+          <p>
+            {{ language.location }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
