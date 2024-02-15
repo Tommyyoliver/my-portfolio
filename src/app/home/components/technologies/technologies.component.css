@@ -23,13 +23,14 @@ section {
   width: 100%;
   height: 100px;
   margin: auto;
+  margin-top: 20px;
   background-color: #1c1e21;
   border-radius: 25px;
   overflow: hidden;
 }
 
 .slider-track {
-  padding: 13px 0;
+  padding: 18px 0;
   display: flex;
   animation: infinite-scroll 15s linear infinite;
   width: calc(120px * 14);
@@ -93,7 +94,7 @@ section {
   }
 
   .slider-track {
-    padding: 20px 0;
+    padding: 27px 0;
     display: flex;
     animation: infinite-scroll 15s linear infinite;
     width: calc(120px * 14);
