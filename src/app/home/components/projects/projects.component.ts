@@ -19,6 +19,14 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     description: "Aquí hay algunos proyectos en los que he trabajado durante este tiempo.",
     projects: [
       {
+        name: "De tu hogar hacia el Mundo",
+        work: "Trabajo Personal",
+        description: "Mensajería abierta y pública para todo el mundo, compartiendo lo que piensas con todos.",
+        web: "https://from-your-home-to-the-world.netlify.app/",
+        technologies: ["Angular", "SQLite"],
+        img: "../../assets/from-your-home-to-the-world.png",
+      },
+      {
         name: "Ecommerce",
         work: "Trabajo Personal",
         description: "Modelo de ecommerce simple y funcional construido en Angular utilizable para cualquier tipo de productos.",
@@ -48,6 +56,14 @@ export class ProjectsComponent implements OnInit, OnDestroy {
     title: "Projects",
     description: "Here are some projects I have worked on during this time.",
     projects: [
+      {
+        name: "From your home to the World",
+        work: "Personal Work",
+        description: "Open and public messaging for everyone, sharing what you think with everyone.",
+        web: "https://from-your-home-to-the-world.netlify.app/",
+        technologies: ["Angular", "SQLite"],
+        img: "../../assets/from-your-home-to-the-world.png",
+      },
       {
         name: "Ecommerce",
         work: "Personal Work",
